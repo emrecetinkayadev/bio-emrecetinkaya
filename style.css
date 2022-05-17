@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'emre';
+    src:  url('emre-font.woff') format('woff')
+}
+
+body {
+    margin: 20px auto;
+    max-width: 50em;
+    font-family: "emre", "arial";
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.experience-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+}
