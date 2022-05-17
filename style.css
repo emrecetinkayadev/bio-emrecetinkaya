@@ -4,23 +4,42 @@
     src:  url('emre-font.woff') format('woff')
 }
 
-body {
-    margin: 20px auto;
-    max-width: 50em;
-    font-family: "emre", "arial";
+header {
+    text-align: center;
 }
 
-img {
+body {
+    margin: 60px auto;
+    max-width: 50em;
+    line-height: 1.5;
+    padding: 4em 1em;
+    font-family: "emre", "arial";
+    color: #555;
+}
+
+img {   
     border-radius: 50%;
     width: 150px;
 }
 
 .experience-date {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 h2 {
+    color: rgb(231, 154, 9);
     display: flex;
     justify-content: space-between;
+    margin-top: 1em;
+    padding-top: 1em;
 }
+
+h3 {
+    display: inline;
+}
+
+a {
+    color :darkorchid
+}
+
