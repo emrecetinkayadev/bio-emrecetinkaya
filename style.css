@@ -49,10 +49,10 @@ a {
     color :darkorchid
 }
 
-.navbar-expand{
-    -ms-flex: auto;
-    
-} 
+.nav navbar-nav{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 

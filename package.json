@@ -19,6 +19,7 @@
   "homepage": "https://github.com/emrecetinkayadev/bio-emrecetinkaya#readme",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.2"
+    "bootstrap-icons": "^1.8.2",
+    "jquery": "^3.6.0"
   }
 }
