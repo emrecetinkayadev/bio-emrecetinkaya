@@ -1,12 +1,15 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$theme-bg: #ccc;
 
 @font-face {
     font-family: 'emre';
-    src:  url('emre-font.woff') format('woff')
+    src:  url("../emre-font.woff") format('woff')
 }
 
 @media only screen and (max-width: 600px) {
     body {
-      background-color: rgb(137, 210, 255);
+      background-color: rgb(245, 232, 129);
     }
 }
 
@@ -48,7 +51,3 @@ h3 {
 a {
     color :darkorchid
 }
-
-
-
-
