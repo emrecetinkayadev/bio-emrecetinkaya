@@ -52,3 +52,23 @@ a {
     color :darkorchid
 }
 
+.captcha{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#captchaValue{
+    height: 40px;
+    padding: 10px;
+    line-height: 20px;
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    color: #000;
+    font-weight: 700;
+    border-right: 2px solid gray;
+}
+
+.captcha input{
+    border-radius: 0 10px 10px 0 !important;
+}
+
