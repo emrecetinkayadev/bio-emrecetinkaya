@@ -11,18 +11,21 @@ var cValue = cVal1 + cVal2 + cVal3 + cVal4 + cVal5 + cVal6;
 
 document.getElementById("captchaValue").innerHTML = cValue;
 
-thisValue = "";
+/* var inputCaptcha = document.getElementById("inputCaptcha").value;
+var thisValue = "";
 inputCaptcha.addEventListener('charge', function(){
     thisValue = inputCaptcha.value;
-})
+}) */
 
+var text = "";
 $("#formValidationButton").click(function formValidation(){
+    let thisValue = document.getElementById("inputCaptcha").value;
     if (cValue == thisValue){
-        alert('valid')
-        document.logForm.submit();
+        text = "";
     }else if(inputCaptcha.value == ""){
-        alert('invalid Captcha')
+        text = 'invalid Captcha';
     }else{
-        alert('invalid Captcha')
+        text = 'invalid Captcha';
     }
+    document.getElementById("captchaP").innerHTML = text;
 });

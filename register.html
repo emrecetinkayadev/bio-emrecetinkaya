@@ -21,7 +21,7 @@
                     </div>
                     <div class="mb-3">
                     <input type="text" class="form-control validate" id="username" aria-describedby="emailHelp">
-                    <p id="usernameP"></p>
+                    <p class="warningP" id="usernameP"></p>
                     </div>
                 </div>
                 <div class="col">
@@ -30,6 +30,7 @@
                     </div>
                     <div class="mb-3">
                         <input type="date" class="form-control" id="birthday">
+                        <p class="warningP" id="birthdayP"></p>
                     </div>
                 </div>
                 <div class="col">
@@ -38,6 +39,7 @@
                     </div>
                     <div class="mb-3">
                     <input type="password" class="form-control" id="password">
+                    <p class="warningP" id="passwordP"></p>
                     </div>
                 </div>
                 <div class="col">
@@ -46,14 +48,16 @@
                     </div>
                     <div class="mb-3">
                         <input type="password" class="form-control" id="repassword">
+                        <p class="warningP" id="repasswordP"></p>
                     </div>
-                </dir>
+                </div>
                 <div class="captcha">
                     <div id="captchaValue">sssss</div>
-                    <input class="form-control" type="text" id="inputCaptcha" placeholder="Captcha">
+                    <input class="form-control" type="text" id="inputCaptcha" placeholder="Captcha">                  
                 </div>
+                    <p class="warningP" id="captchaP"></p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-color px-5 mb-5 w-100" id=formValidation>Register</button>
+                    <button type="button" class="btn btn-color px-5 mb-5 w-100" id=formValidationButton>Register</button>
                 </div>
                 <div id="emailHelp" class="form-text text-center mb-5 text-dark">Already have an Account?
                     <a href="login.html" class="text-dark fw-bold"> Login</a> <br>
