@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path")
 module.exports = {
     mode:"development",
@@ -15,8 +16,27 @@ module.exports = {
                     "css-loader",
                     "sass-loader"
                 ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: "[name].[contenthash].[ext]",
+                      outputPath: "fonts/",
+                    }
+                  }
+                ]
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
+
+    ]
 
 };
