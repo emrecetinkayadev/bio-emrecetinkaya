@@ -9,7 +9,9 @@ var cVal6 = allValue[Math.floor(Math.random() * allValue.length)];
 
 var cValue = cVal1 + cVal2 + cVal3 + cVal4 + cVal5 + cVal6;
 
-document.getElementById("captchaValue").innerHTML = cValue;
+
+var captiaVal = document.getElementById("captchaValue").innerHTML = cValue;
+
 
 /* var inputCaptcha = document.getElementById("inputCaptcha").value;
 var thisValue = "";
@@ -27,5 +29,7 @@ $("#formValidationButton").click(function formValidation(){
     }else{
         text = 'invalid Captcha';
     }
-    document.getElementById("captchaP").innerHTML = text;
+    if (text != null){
+        document.getElementById("captchaP").innerHTML = text;
+    }
 });

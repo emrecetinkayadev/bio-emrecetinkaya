@@ -14,10 +14,14 @@ function nameValidation() {
       text = "Name Cannot Be Empty";
     } else if(!testVal){
       text = "Not a Valid Username";
+    } else if(x.length < 6 || x.length > 20){
+      text = "Username Length is not valid";
     }  else {
       text = "";
     }
-    document.getElementById("usernameP").innerHTML = text;
+    if (text != null){
+      document.getElementById("usernameP").innerHTML = text;
+    }
   }
 
   function birthdayValidation() {
@@ -28,19 +32,28 @@ function nameValidation() {
     } else {
       text = "";
     }
-    document.getElementById("birthdayP").innerHTML = text;
+    if (text != null){
+      document.getElementById("birthdayP").innerHTML = text;
+    }
   }
 
   var password = "";
   function passwordValidation() {
     password = document.getElementById("password").value;
     let text;
+    var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
     if (password == "") {
       text = "Password Cannot Be Empty";
+    } else if(password.length < 10 || password.length > 20){
+      text = "Password Length is not valid";
+    }else if(!strongRegex.test(password)) {
+      text = "Password is not Strong";
     } else {
       text = "";
     }
-    document.getElementById("passwordP").innerHTML = text;
+    if (text != null){
+      document.getElementById("passwordP").innerHTML = text;
+    }
   }
 
   function repasswordValidation() {
@@ -53,5 +66,7 @@ function nameValidation() {
     } else {
       test = "Password not Match"
     }
-    document.getElementById("repasswordP").innerHTML = text;
+    if (text != null){
+      document.getElementById("repasswordP").innerHTML = text;
+    }
   }
