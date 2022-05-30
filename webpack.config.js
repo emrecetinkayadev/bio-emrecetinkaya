@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const path = require("path")
-var htmlWebpackPlugin = require("html-webpack-plugin")
+const htmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
     mode:"development",
@@ -37,9 +37,7 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            template: "register.html",
-            filename: "register.html",
-            chunks: ["register","validation"]
+            template: "./register",
         }), 
         new webpack.ProvidePlugin({
             $: "jquery",
